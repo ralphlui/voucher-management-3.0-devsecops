@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-configmap
+data:
+  SPRING_PROFILES_ACTIVE: sit
+  BACKEND_URL: https://devplify.com
+  FRONTEND_URL: https://devplify.com
+  AUTH_URL: https://devplify.com/api/users
+  AUDIT_SQS_URL: https://sqs.ap-southeast-1.amazonaws.com/891377130731/Audit-Action
+  AWS_REGION: ap-southeast-1
+  SQS_QUEUE_NAME: Audit-Action
+  GOOGLE_CLIENT_ID: "581310790423-lucsrc3il09ip13h9cfc9tfjlnctluko.apps.googleusercontent.com"
+  PENTEST_ENABLE: "false"
+  SECURE_ENABLE: "true"
+  DEMO_ENABLE: "false"
+  REDIS_HOST: clustercfg.redis-cache-01.o05pp8.apse1.cache.amazonaws.com
